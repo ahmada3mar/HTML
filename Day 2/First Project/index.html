@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+            float: left;
+            align-content: center;
+            text-align: center;
+        }
+
+        label {
+            padding: 10px;
+            text-align: right;
+            line-height: 22.6px;
+
+
+        }
+
+
+
+
+        section {
+
+            margin: auto;
+            width: 40%;
+
+            padding: 10px;
+        }
+
+        div {
+            margin: auto;
+            align-content: center;
+            text-align: center;
+
+            width: 300px;
+        }
+        .class1{
+            margin-left: 20.5%;
+        }
+        .class2{
+            margin-left: 46.5%;
+            width: 82.8px;
+        }
+        fieldset{
+            background-color:#fcf6bf;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Registration Form</h2>
+    </header>
+    <section>
+
+
+        <form>
+
+            <fieldset>
+                <legend>Personalia details</legend>
+
+                <div>
+                    <span style="text-align: right;">
+                        <label for="first_name">First name:</label><br><br>
+                        <label for="last_name">Last name:</label><br><br>
+                        <label for="email">Email address</label><br><br>
+                        <label for="Gender">Gender </label>
+
+                    </span>
+
+                    <span>
+                        <input type="text" id="first_name" name="fname"><br><br>
+
+                        <input type="text" id="last_name" name="last_name"><br><br>
+
+                        <input type="email" id="email" name="email"><br><br>
+
+                        <input type="radio" id="Male" name="Male">Male
+                        <input type="radio" id="Female" name="Female">Female<br><br>
+
+                    </span>
+
+                </div>
+
+
+
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>City</legend>
+
+                <div >
+                    <span  class="class1" >
+                        <label for="first_name">City</label>
+
+                    </span>
+
+                    <span >
+                        <select name="City" id="City">
+                            <option value="amman">Amman</option>
+                            <option value="Az zarqa">Az zarqa</option>
+                            <option value="Ar ramtha">Ar ramtha</option>
+                        </select>
+
+
+
+                    </span>
+
+                </div>
+
+
+
+
+            </fieldset>
+
+
+        </form>
+    </section>
+    <input class="class2" type="submit" value="Subscribe">
+
+</body>
+
+</html>
