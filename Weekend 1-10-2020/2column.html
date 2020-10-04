@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,103 +8,173 @@
 
     <style>
         * {
-  box-sizing: border-box;
- 
-}
-body{
-    background-color: lemonchiffon;
-}
+            box-sizing: border-box;
 
-#row{
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-top: -10px;
-    content: "";
-  display: table;
-  clear: both;
-  background-color: gold;
-  width: 80%;
-}
+        }
+
+        body {
+            background-color: lemonchiffon;
+            margin: 0px;
+        }
+
+        h1 {
+            margin: 0px;
+            padding: 10px;
+            
+        }
 
 
-#col-2{
-    
-    background-color:gainsboro;
-    width: 30%;
-    float: left;
-    height:40rem;
-    padding: 10px;
-    
-}
 
-#col-1{
-    background-color: white;
-    width: 70%;
-    float: left;
-    height:40rem;
-    padding: 10px;
-}
+       
+
+        .contener {
+            height: 100vh;
+            margin: 0px;
+            margin: 0px 20vw;
+
+        }
+        .row1,
+        .row2 {
+            overflow:hidden;
+           
+            width: 100%;
+        }
+
+        .row1 {
 
 
-footer{
-    
-    text-align: center;
-    align-content: center;
- background-color: lightslategrey;
- position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 20px;
- 
-}
 
+            background-color: gold;
+
+            height: 10%;
+
+
+        }
+
+        .row2 {
+
+
+
+
+            height: 90%;
+
+        }
+
+
+
+        .col-1,
+        .col-2 {
+            float: left;
+            height: 100%;
+            padding: 10px;
+
+        }
+
+        .col-2 {
+
+            background-color: gainsboro;
+            width: 30%;
+
+
+
+        }
+
+        .col-1 {
+            background-color: white;
+            width: 70%;
+
+        }
+
+
+        footer {
+            text-align: center;
+            align-content: center;
+
+            background-color: lightslategrey;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+
+        }
     </style>
 </head>
+
 <body>
-    
-<div id="row">
-    <h1>2 - Column Layout</h1>
-
-</div>
-<div id="row">
-    <div id="col-1">
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magnam eaque, voluptatem, dignissimos ut laboriosam tempora enim consequuntur quidem eveniet consectetur porro omnis aperiam sunt mollitia distinctio. Qui magni et reiciendis deleniti sapiente repellendus repudiandae saepe asperiores quia neque, libero sint corporis praesentium, temporibus explicabo culpa, vero ad rerum error blanditiis ipsam quo id? Cumque dolores nemo dolore unde aliquam!</p>
-        
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum reprehenderit illo mollitia accusamus ratione commodi vitae adipisci facere molestiae possimus voluptatum praesentium recusandae distinctio perferendis quis ea laudantium, obcaecati excepturi?
-        </p>
-        
-        
-        <p>
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam corporis non similique illo veniam voluptas dolores ipsum culpa laboriosam, corrupti itaque repellat tempore provident officiis eaque necessitatibus unde quia facere sed in dignissimos illum? Omnis repudiandae repellendus numquam voluptas facere illum voluptate, blanditiis quam a in odit, rerum nobis!
-        </p>
-        <br>
-        <p>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam corporis non similique illo veniam voluptas dolores ipsum culpa laboriosam, corrupti itaque repellat tempore provident officiis  
-            </p>
-            <br>
-             
+    <div class="contener">
 
 
+        <div class="row1">
+            <h1>2 - Column Layout</h1>
+
+        </div>
+        <div class="row2">
+            <div class="col-1">
+
+                <div>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magnam eaque, voluptatem,
+                        dignissimos
+                        ut laboriosam tempora enim consequuntur quidem eveniet consectetur porro omnis aperiam sunt
+                        mollitia
+                        distinctio. Qui magni et reiciendis deleniti sapiente repellendus repudiandae saepe asperiores
+                        quia
+                        neque, libero sint corporis praesentium, temporibus explicabo culpa, vero ad rerum error
+                        blanditiis
+                        ipsam quo id? Cumque dolores nemo dolore unde aliquam!</p>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum reprehenderit illo mollitia
+                        accusamus
+                        ratione commodi vitae adipisci facere molestiae possimus voluptatum praesentium recusandae
+                        distinctio
+                        perferendis quis ea laudantium, obcaecati excepturi?
+                    </p>
+
+
+                    <p>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam corporis non similique illo
+                        veniam
+                        voluptas dolores ipsum culpa laboriosam, corrupti itaque repellat tempore provident officiis
+                        eaque
+                        necessitatibus unde quia facere sed in dignissimos illum? Omnis repudiandae repellendus numquam
+                        voluptas
+                        facere illum voluptate, blanditiis quam a in odit, rerum nobis!
+                    </p>
+                    <br>
+                    <p>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam corporis non similique illo
+                        veniam
+                        voluptas dolores ipsum culpa laboriosam, corrupti itaque repellat tempore provident officiis
+                    </p>
+                    <br>
+
+                </div>
+
+
+
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li>Item #1</li>
+                    <li>Item #2</li>
+                    <li>Item #3</li>
+                </ul>
+
+            </div>
+
+        </div>
     </div>
-    <div id="col-2">
-        <ul>
-            <li>Item #1</li>
-            <li>Item #2</li>
-            <li>Item #3</li>
-        </ul>
 
-    </div>
-    
-</div>
-
-<footer>Accept our cookie policy.</footer>
+    <footer>
+        Accept our cookie policy.
+    </footer>
 
 
 
 </body>
+
 </html>
