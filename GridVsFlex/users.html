@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(247, 255, 134);
+            width: 100%;
+        }
+
+        .contaner {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px 0 0 0 ;
+        }
+
+
+        img {
+         
+          height: 60px;
+            width: 60px;
+            border-radius: 50px;
+        }
+
+        li {
+            list-style: none;
+            border-bottom: rgb(219, 219, 219) 1px solid;
+            padding: 10px;
+
+            
+        }
+
+        ul {
+            background-color: white;
+            padding: 10px;
+            border-radius: 60px;
+
+            width: 50%;
+            box-shadow: 10px 10px 20px gray;
+
+        }
+
+
+        .userCon {
+            display: flex;
+            flex-direction: row;
+            
+            
+overflow: hidden;
+
+
+
+        }
+
+        .addr,
+        .userName {
+            margin: .25rem 1rem;
+
+
+        }
+
+        .addr {
+            color: gray;
+            font-weight: normal;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+
+
+            justify-content: center;
+        }
+
+      
+        li:last-child {
+            border-bottom: none;
+
+        }
+        li:last-child:hover {
+            background-color: lightcoral;
+            border-radius: 0 0 50px 50px;
+
+        }
+        li:first-child:hover{
+            border-radius:  50px 50px 0 0;
+        }
+
+        li:active{
+            
+           border: lightcoral 5px solid;
+          
+        }
+
+li:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+    
+}
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="contaner">
+
+        <ul>
+            <li>
+                <div class=userCon>
+                    <img src="user.png" alt="">
+                    <div class="text">
+                        <h4 class="userName">User #1</h4>
+                        <h5 class="addr">Amman, Jordan</h5>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class=userCon>
+                    <img src="user.png" alt="">
+                    <div class="text">
+                        <h4 class="userName">User #2</h4>
+                        <h5 class="addr">Salt, Jordan</h5>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class=userCon>
+                    <img src="user.png" alt="">
+                    <div class="text">
+                        <h4 class="userName">User #3</h4>
+                        <h5 class="addr">Zarqa, Jordan</h5>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class=userCon>
+                    <img src="user.png" alt="">
+                    <div class="text">
+                        <h4 class="userName">User #4</h4>
+                        <h5 class="addr">Irbid, Jordan</h5>
+
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
