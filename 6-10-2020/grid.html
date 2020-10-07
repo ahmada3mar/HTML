@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+
+.lgBox{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 25px auto  25px;
+    
+}
+.head{
+    background-color: cadetblue;
+    
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    
+}
+
+.subBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+    grid-column-gap: 25px;
+    
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.orange{
+    background-color: chocolate;
+}
+
+.gray{
+    background-color: lightgray;
+    
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.footer{
+    background-color: cadetblue;
+    
+}
+
+.box:nth-child(6){
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+}
+
+.box:nth-child(7){
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row-start: 3;
+}
+.box:nth-child(5){
+   grid-column-start: 1;
+   
+   grid-row-start: 2;
+}
+.box:nth-child(2){
+   grid-column-start: 1;
+  
+   grid-row-start: 3;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="lgBox">
+
+    <div class="head"></div>
+
+    <div class="body">
+        <div class="gray box"></div>
+        <div class="gray box"></div>
+        <div class="yellow box"></div>
+        <div class="yellow box"></div>
+        <div class="yellow box"></div>
+        <div class="blue box"></div>
+        <div class="blue box"></div>
+        <div class="subBody">
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+    
+        </div>
+    </div>
+   
+
+
+    <div class="footer"></div>
+</div>
+
+    
+</body>
+</html>

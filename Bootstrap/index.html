@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=50%">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane container active" id="home">...</div>
+        <div class="tab-pane container fade" id="menu1">...</div>
+        <div class="tab-pane container fade" id="menu2">...</div>
+      </div>
+
+    <div id="menu1" class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this <mark> responsive</mark> page to see the effect!</p>
+      </div>
+      <div id="menu2" class="jumbotron text-center">
+        <h1>Mysccscsc First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-pull-12">.col-sm-4 .col-sm-push-8</div>
+         
+          
+            
+            <div class="dropdown-menu">
+              <div class="dropdown-item" href="#">Tablet</div>
+              <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          img
+        </div>
+        <div class="col-md-8">
+          text
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-sm-5 offset-0 bg-dark">
+          text
+        </div>
+        <div class="col-sm-5 bg-light">
+          img
+        </div>
+    </div>
+
+</body>
+</html>
