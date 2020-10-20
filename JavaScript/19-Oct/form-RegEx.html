@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration From</title>
+
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .formcontainer {
+            width: 50vmax;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            flex-direction: column;
+            background-color: #3b3b3d;
+
+            border-radius: 15px;
+
+        }
+
+
+        .felid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 15px;
+        }
+
+        ::placeholder {
+            color: teal;
+
+        }
+
+
+
+        .felid>input {
+
+
+            height: 40px;
+
+            border-radius: 25px;
+            margin: 10px 0;
+            padding-left: 10px;
+
+
+        }
+
+        .agreement {
+            align-self: flex-start;
+        }
+
+        a {
+            color: darkgoldenrod;
+        }
+
+
+        h1 {
+            border-bottom: darkgray 2px solid;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+
+        .agreement {
+            color: white;
+
+        }
+
+        .sumb {
+            pointer-events: none;
+            cursor: default;
+            border-style: none;
+            align-self: flex-end;
+            width: 50%;
+            height: 50px;
+
+            background-color: lightgrey;
+            border-radius: 25px;
+            margin: 15px 0;
+
+
+            color: white;
+
+
+
+
+        }
+
+
+        .dis {
+            pointer-events: none;
+            cursor: default;
+            background: lightgrey;
+            border-style: none;
+            align-self: flex-end;
+            width: 50%;
+            height: 50px;
+
+            background-color: lightgrey;
+            border-radius: 25px;
+            margin: 15px 0;
+
+
+            color: white;
+
+        }
+
+        .active {
+            pointer-events: initial;
+            cursor: pointer;
+            background-color: teal;
+
+
+            border-style: none;
+            align-self: flex-end;
+            width: 50%;
+            height: 50px;
+            border-radius: 25px;
+            margin: 15px 0;
+
+
+            color: white;
+
+
+        }
+
+
+        /* .sumb:hover{
+            background-color: rgb(6, 196, 196);
+            box-shadow:  0 0 10px rgb(127, 255, 223);
+        } */
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="formcontainer">
+
+        <h1>Create an Account</h1>
+
+        <div class="felid">
+            <input onchange="checkName()" id="Name" placeholder="&#xf007; Name" style="font-family:FontAwesome;"
+                type="text">
+            <input id="Phone" maxlength="10" onkeyup="checkPhone()" placeholder="&#xf095; Phone Number"
+                style="font-family:FontAwesome;" type="text">
+            <input onkeyup="email()" id="email" placeholder="&#xf0e0; email" style="font-family:FontAwesome;"
+                type="text">
+            <input id="passord" onkeyup="passord()" placeholder="&#xf023; Password" style="font-family:FontAwesome;"
+                type="password">
+            <div class="agreement">
+
+                <input id="cheek" onclick="check()" type="checkbox"> I agree to the <a href="#">Terms and Conditions</a>
+                and <a href="#">Privacey Policy</a>
+            </div>
+            <input id="button" type="button" value="Create Account" class="sumb">
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+
+
+
+        function check() {
+            if (document.getElementById("cheek").checked) {
+                document.getElementById("button").setAttribute("class", "active");
+
+
+            }
+            else {
+                document.getElementById("button").setAttribute("class", "dis");
+            }
+        }
+
+
+
+        function checkName() {
+
+            var regex = /(\b[a-z](?!\s))/g;
+            var txt = document.getElementById("Name").value;
+            txt = txt.replace(regex, function (x) { return x.toUpperCase(); });
+
+            txt = txt.replace("Al", "Al -");
+
+
+
+
+            document.getElementById("Name").value = txt;
+
+
+        }
+
+
+        function checkPhone() {
+
+
+
+
+            document.getElementById("Phone").value = document.getElementById("Phone").value.replace(/\D/g, '');
+
+            function convert() {
+
+
+
+                var match = document.getElementById("Phone").value.match(/^(\d{3})(\d{3})(\d{4})$/);
+
+                return match[1] + '-' + match[2] + '-' + match[3];
+
+            }
+
+
+
+            document.getElementById("Phone").value = convert();
+
+        }
+
+
+        function email() {
+
+            if (!((document.getElementById("email").value).match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) && document.getElementById("email").value != "") {
+
+
+                document.getElementById("email").style.boxShadow = " 0 0 10px red";
+                document.getElementById("email").style.color = "red";
+
+
+            } else {
+                document.getElementById("email").style.boxShadow = " none";
+                document.getElementById("email").style.color = "initial";
+            }
+
+        }
+
+
+
+        function passord() {
+            if (!((document.getElementById("passord").value).match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/)) && document.getElementById("passord").value != "") {
+
+
+                document.getElementById("passord").style.boxShadow = " 0 0 10px red";
+                document.getElementById("passord").style.color = "red";
+
+
+            } else {
+                document.getElementById("passord").style.boxShadow = " none";
+                document.getElementById("passord").style.color = "initial";
+            }
+
+
+
+
+           
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.box:nth-child(1) {
+  grid-template-columns: col span 12;
+  background-color: yellow;
+}
+
+.box:nth-child(2) {
+  grid-row: 2;
+  background-color: yellow;
+}
+
+.box:nth-child(3) {
+  grid-row: 2;
+  background-color: yellow;
+}
