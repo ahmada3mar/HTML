@@ -12,7 +12,7 @@ nav {
 }
 
 body {
-  background-image: url("../../style/img/backround1.jpg");
+  background-image: url(../../style/img/backround1.jpg);
   background-size: cover;
 }
 
